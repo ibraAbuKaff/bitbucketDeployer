@@ -77,7 +77,7 @@ file_put_contents($_SERVER['SCRIPT_FILENAME'].'.log',"Web Hook Post: ".date("F j
 }
 
 # Capture current directory
-$original_dir = getcwd();
+//$original_dir = getcwd();
 
 # Loop through the directories
 foreach($dirs_to_update as $dir) {
