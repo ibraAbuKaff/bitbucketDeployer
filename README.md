@@ -1,7 +1,7 @@
 # bitbucketDeployer
 PHP Script to deploy specific branch from bitbucket to your server.
 
-1) Authentication
+1) Authentication >
 Add new ssh key to your project in bitbukcet
 
 2)download the script to your project.
