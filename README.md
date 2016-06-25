@@ -7,7 +7,8 @@ Add new ssh key to your project in bitbukcet
 2) Download the script to your project.
 
 3) Create a POST service :
-add new POST service > enter the URL to the script(script could be under the root of your project)
+add new POST service > enter the URL (http(s)://www.example.php/deploy.php) 
+(script could be under the root of your project)
 
 4) Try your first commit!
 
