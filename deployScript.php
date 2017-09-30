@@ -83,7 +83,7 @@ file_put_contents($_SERVER['SCRIPT_FILENAME'].'.log',"Web Hook Post: ".date("F j
 foreach($dirs_to_update as $dir) {
 file_put_contents($_SERVER['SCRIPT_FILENAME'].'.log',"Web Hook Post: ".date("F j, Y, g:i a")."\n".json_encode($dir)."\n\n", FILE_APPEND);
 //exec('sudo cd /var/zpanel/hostdata/zadmin/public_html/usermanager_ibra-node_com');
-  exec("sudo /usr/local/git/bin/git  pull $remote $branch 2>&1",$output,$returnVal);
+  exec("sudo /usr/local/git/bin/git pull ".escapeshellarg($remote)." ".escapeshellarg($branch)." 2>&1",$output,$returnVal);
 file_put_contents($_SERVER['SCRIPT_FILENAME'].'.log',"Web Hook Post: ".date("F j, Y, g:i a")."\n".json_encode($output).json_encode($returnVal)."\n\n", FILE_APPEND);
   exec("sudo /usr/local/bin/composer  install 2>&1",$output,$returnVal);
   exec("sudo /usr/local/bin/composer dumpautoload -o 2>&1",$output,$returnVal);
